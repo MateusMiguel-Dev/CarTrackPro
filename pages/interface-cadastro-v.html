@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/master.css" type="text/css">
+    <link rel="stylesheet" href="../css/style-venda.css" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Cadastro Veículo</title>
+    <style>
+        nav#nav-lat div#btn-expandir{
+            color: white;
+            margin: 16px 20px 16px 20px;
+            font-size: 25px;
+            padding-left: 17px;
+            cursor: pointer;
+        }
+        nav#nav-lat ul li.item-menu a .txt-icon{
+            margin-left: 40px;
+            margin-top: -40px;
+        }
+        #submit{
+            background-color: green;
+            font-size: 20px;
+            width: 170px;
+            color: white;
+            outline: none;
+            border: none;
+            height: 40px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <img id="logo" src="../img/logo-black.png" alt="">
+        <nav>
+            <ul>
+                <li><a href="http://">Contato</a></li>
+                <li><a href="http://">Sobre</a></li>
+                <li id="sair"><a href="http://"><span class="icon-top"><i class="bi bi-box-arrow-left"></i></span></a></li>
+            </ul>
+        </nav>
+    </header>
+    <nav id="nav-lat">
+        <div id="btn-expandir">
+            <i class="bi bi-list" id="s-menu"></i>
+        </div>
+        <ul>
+            <li class="item-menu"><a href="../index.html"><span class="icon"><i class="bi bi-house"></i></span><span class="txt-icon">Home</span></a></li>
+            <li class="item-menu"><a href="interface-venda.html"><span class="icon"><i class="bi bi-credit-card"></i></span><span class="txt-icon">Vender</span></a></li>
+            <li class="item-menu"><a href="interface-cadastro-c.html"><span class="icon"><i class="bi bi-person-add"></i></span><span class="txt-icon">Cadastrar Cliente</span></a></li>
+            <li class="item-menu" id="ativo"><a href="interface-venda-v.html"><span class="icon"><i class="bi bi-car-front"></i></span><span class="txt-icon">Cadastrar Veículo</span></a></li>
+            <li class="item-menu"><a href=""><span class="icon"><i class="bi bi-search"></i></span><span class="txt-icon">Consultar</span></a></li>
+            <li class="item-menu"><a href=""><span class="icon"><i class="bi bi-receipt"></i></span><span class="txt-icon">Registro de Vendas</span></a></li>
+            <li class="item-menu"><a href=""><span class="icon"><i class="bi bi-pencil"></i></span><span class="txt-icon">Editar</span></a></li>
+            <li class="item-menu"><a href=""><span class="icon"><i class="bi bi-box-arrow-left"></i></span><span class="txt-icon">Sair</span></a></li>
+        </ul>
+    </nav>
+    <div id="interface" class="vendas-cont">
+        <i id="inicial" class="bi bi-plus-square"></i><h2>Novo Cadastro</h2>
+        <div id="display-forms">
+            <section id="box-input">
+                <form action="" id="form-rec">
+                    <fieldset>
+                        <legend>Dados do Veículo</legend>   
+                        <div class="input-all">
+                            <label for="nomeCliente">Modelo</label><br>
+                            <input type="text" id="nomeCliente" name="nomeCliente" placeholder="Digite o modelo do veículo..." required><br>
+                        </div>
+                        <div class="input-all">
+                            <label for="cpfCliente">Placa</label><br>
+                            <input type="text" id="cpfCliente" name="cpfCliente" required placeholder="Digite a placa do veículo..."><br>
+                        </div>
+                        <div class="input-all">
+                            <label for="cpfCliente">Cor</label><br>
+                            <input type="text" id="cpfCliente" name="cpfCliente" required placeholder="Digite a cor do veículo..."><br>
+                        </div>
+                        <div class="input-all">
+                            <label for="cpfCliente">Ano</label><br>
+                            <input type="text" id="cpfCliente" name="cpfCliente" required placeholder="Digite o ano de fabricação do veículo..."><br>
+                        </div>
+                        <div class="input-all">
+                            <label for="cpfCliente">Motor</label><br>
+                            <input type="text" id="cpfCliente" name="cpfCliente" required placeholder="Digite o modelo de motor do veículo..."><br>
+                        </div>
+                        <div class="input-all">
+                            <label for="cpfCliente">Quantidade de Portas</label><br>
+                            <input type="text" id="cpfCliente" name="cpfCliente" required placeholder="Digite a quantidade de portas do veículo..."><br>
+                        </div>
+                    </fieldset> 
+                    <button id="submit">Finalizar Cadastro</button>
+                </form>
+            </section>
+        </div>
+    </div>
+    <script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100&display=swap');*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 2px dotted red; */
+}
+@media screen and (max-width:320px){
+    div#interface{
+        margin: auto;
+    }
+    header img#logo{
+        margin-left: 0;
+    }
+    div#interface section#container-1 h1#lk-for{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:752px){
+    body{
+        background-attachment: none;
+    }
+    header nav ul{
+        display: none;
+    }
+    header nav{
+        display: none;
+    }
+    header nav ul{
+        margin: 0 auto;
+    }
+    div#interface section#car-exp article.car-u{
+        margin-left: -20px;
+    }
+
+}
+    body{
+    background-image: url("../img/background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 0%;
+    font-family: 'Geologica', sans-serif;
+    font-weight: 900;
+    /* background-attachment: fixed; */
+    background-color: black;
+}
+header{
+    width: 100%;
+    height: 6rem;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+header img#logo{
+    width: 222;
+    height: 26px;
+    margin-top: 35px;
+    margin-left: 3.0rem;
+}
+header nav{
+    margin: 25px 70px;
+}
+header nav ul li{
+    display: inline-block;
+    padding: 15px;
+}
+header nav ul li a{
+    color: #1c2f65;
+    text-decoration: none;
+}
+div#interface{
+    width: 80%;
+    height: 1000px;
+    margin: 100px auto;
+    text-align: center;
+    /* background-color: #1c2f65; */
+}
+div#interface section#container-1{
+    width: 100%;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+div#interface section#container-1 h1#lk-for{
+    color: white;
+    font-size: 5.9vh;
+}
+div#interface section#container-1 form input#search{
+    width: 50%;
+    display: flexbox;
+    height: 40px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    padding: 20px;
+    font-family: 'Geologica', sans-serif;
+    font-size: 15px;
+    margin: 22px;
+}
+div#interface section#car-exp{
+    margin-top: 100px;
+    width: 100%;
+}
+div#interface section#car-exp article.car-u{
+    width: 25vw;
+    min-width: 320px;
+    display: inline-block;
+    height: 320px;
+    margin: 10px;
+    border-radius: 20px;
+    background-color: white;
+    /* box-shadow: 2px 2px 5px rgb(143, 141, 141); */
+
+}
